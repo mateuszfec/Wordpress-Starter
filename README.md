@@ -13,8 +13,8 @@
 ### Available libraries (with current versions)
 
 * Normalize.css - **v8.0.1**
-* Bootstrap - **v5.0.0-beta1**
-* Foundation for Sites - **v6.6.3**
+* Bootstrap - **v5.1.3**
+* Foundation for Sites - **v6.7.3**
 * Font Awesome - **v5.15.1**
 * PhotoSwipe - **v4.1.3**
 * Glide - **v3.3.0**

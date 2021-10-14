@@ -1,5 +1,6 @@
 ### Websites starter changelog:
 
+* 1.7.0 - Bootstrap v5.1.3 & Foundation v 6.7.3, Gulp LESS & Stylus support is disabled from default
 * 1.6.1 - npm packages update
 * 1.6.0 - PhotoSwipe, Glide, Swiper libraries integration
 * 1.5.0 - JS files support + Gulp path fixes
