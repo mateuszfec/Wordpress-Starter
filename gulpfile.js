@@ -48,6 +48,7 @@ const isProduction = process.argv.indexOf("--prod") >= 0,
       disableStrictMode = process.argv.indexOf("--nostrict") >= 0,
       runProxy = process.argv.findIndex(value => /^--sync/.test(value)) >=0 ? process.argv.find(value => /^--sync/.test(value)) : null,
       proxyValue = runProxy !== null && runProxy.split('=')[1] ? runProxy.split('=')[1] : 'http://localhost/',
+      host = proxyValue.replace(/(http:\/\/)|(https:\/\/)/gm, '').split('/')[0] || 'localhost',
       portParameter = process.argv.findIndex(value => /^--port/.test(value)) >=0 ? process.argv.find(value => /^--port/.test(value)) : null,
       portValue = portParameter !== null && portParameter.split('=')[1] ? portParameter.split('=')[1] : 3000,
       logs = process.argv.indexOf("--log2") > 0 ? 2 : process.argv.indexOf("--log1") > 0 ? 1 : 0,
@@ -56,10 +57,13 @@ const isProduction = process.argv.indexOf("--prod") >= 0,
           watchOptions: {
               ignoreInitial: true
           },
-          files: ['assets/**/*', '**/*.php', '**/*.html']
+          files: ['assets/**/*', '**/*.php', '**/*.html'],
+          open: 'external',
+          https: true
       };
 
 if (runProxy){
+    browserSyncOptions.host = host;
     browserSyncOptions.proxy = proxyValue;
     browserSyncOptions.port = portValue || 3000;
 }
