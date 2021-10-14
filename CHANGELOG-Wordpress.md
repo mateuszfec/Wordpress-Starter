@@ -1,5 +1,6 @@
 ### Wordpress starter changelog:
 
+* 1.8.0 - Bootstrap v5.1.3 & Foundation v 6.7.3, Gulp LESS & Stylus support is disabled from default
 * 1.7.1 - npm packages update
 * 1.7.0 - PhotoSwipe, Glide, Swiper libraries integration
 * 1.6.0 - jQuery dependencies are removed from page front-end
