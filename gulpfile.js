@@ -58,7 +58,7 @@ const isProduction = process.argv.indexOf("--prod") >= 0,
               ignoreInitial: true
           },
           files: ['assets/**/*', '**/*.php', '**/*.html'],
-          open: 'external',
+          open: false,
           https: true
       };
 
