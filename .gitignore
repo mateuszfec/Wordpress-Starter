@@ -1,12 +1,22 @@
+# Ignore all
+/*
+!.gitignore
+!README.md
+
+# Global WP files
+wp-config.php
+
+# WP theme files
+!wp-content
+wp-content/*
+!wp-content/themes
+wp-content/themes/index.php
+
 # IDE + System
 .idea/
 .DS_Store
 
-# Node.js
-node_modules/
-
-# Build files
-assets/
-
-# WP Debug
-debug.log
+# Project files
+wp-content/themes/starterTheme/node_modules/
+wp-content/themes/starterTheme/assets/
+wp-content/themes/starterTheme/debug.log

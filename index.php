@@ -1,15 +1,17 @@
 <?php
 /**
- * Template Name: Home page
- * Description: Home page template - for project-full-name
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
  *
- * Authors: project-author-name (project-author-email)
- * Copyright project-full-name © All Rights Reserved
+ * @package WordPress
  */
 
-get_header();
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-// Home page
-include "template-parts/page-home/page-home-base.php";
-
-get_footer();
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';

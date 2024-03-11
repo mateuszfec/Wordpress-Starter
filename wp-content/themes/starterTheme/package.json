@@ -1,0 +1,77 @@
+{
+  "name": "websites_starter",
+  "description": "Websites starter pack (for PHP websites)",
+  "version": "1.9.0",
+  "author": "Mateusz Feć",
+  "license": "MIT",
+  "homepage": "https://github.com/mateuszfec/Websites-Starter",
+  "scripts": {
+    "watch": "npm run gulp watch",
+    "build": "npm run gulp build --prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mateuszfec/Websites-Starter"
+  },
+  "bugs": {
+    "url": "https://github.com/mateuszfec/Websites-Starter/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "axios": "^1.6.7",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^3.0.2",
+    "chokidar": "^3.6.0",
+    "del": "^7.1.0",
+    "fancy-log": "^2.0.0",
+    "glob-parent": "^6.0.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-minify": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-debug": "^3.0.0",
+    "postcss": "^8.4.35",
+    "sass": "^1.71.1",
+    "set-value": "^4.1.0",
+    "socket.io": "^4.7.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 5 chrome version",
+      "last 5 firefox version",
+      "last 5 safari version",
+      "last 5 ie version"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              ">0.25%",
+              "not ie 11",
+              "not op_mini all"
+            ],
+            "node": "8.0"
+          },
+          "corejs": 3,
+          "useBuiltIns": "entry"
+        }
+      ]
+    ]
+  }
+}

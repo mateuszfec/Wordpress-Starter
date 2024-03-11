@@ -1,6 +1,6 @@
-## Wordpress starter pack
+## WordPress starter pack
 
-**About:** Wordpress starter pack
+**About:** WordPress starter pack
 **Author:** Mateusz Feć  
 **Website**: www.mateuszfec.pl  
 **Linkedin:** www.linkedin.com/in/mateuszfec/  
